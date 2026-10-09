@@ -85,17 +85,17 @@ def main():
     
     # Interactive loop
     while True:
-        month = int(input("\nMonth (1-12), or 0 to quit: "))
+        month = int(input("\n Enter number of a month (1-12), or enter 0 to quit: "))
         if month == 0:
             break
         while month < 1 or month > 12:
             month = int(input("Invalid. Month (1-12): "))
 
-        day = int(input("Day (1-31): "))
+        day = int(input("Enter a day (1-31): "))
         while day < 1 or day > 31:
             day = int(input("Invalid. Day (1-31): "))
 
-        year = int(input("Year: "))
+        year = int(input("Enter a year: "))
 
         print(f"{month}/{day}/{year} is a {get_day_of_the_week(month, day, year)}")
 
